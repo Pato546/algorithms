@@ -17,6 +17,6 @@ function binary_search(array, item){
 	return -1;
 }
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(binary_search(array, 7))
+let array = ['Ababio', 'Patrick']
+console.log(binary_search(array, 'Ababio'))
 
