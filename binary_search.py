@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def binary_search(list_: list, item: int) -> int or None:
+def binary_search(list_: list, item: int or str) -> int:
     low = 0
     high = len(list_) - 1
 
@@ -14,7 +14,7 @@ def binary_search(list_: list, item: int) -> int or None:
             high = mid - 1
         else:
             low = mid + 1
-    return None
+    return -1
 
 my_list = ['Ababio', 'Patrick']
 
