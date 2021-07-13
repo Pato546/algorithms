@@ -1,9 +1,22 @@
 #!/usr/bin/env python3
 from find_min_max import min_, max_
 
+def is_empty(func):
+    
+    def wrapper(*args, **kwargs):
+        
+        for arg in args:
+            if len(arg) == 0:
+                return 'cannot sort an empty list'
+        return func(*args, **kwargs)
+    
+    return wrapper
+
+
+@is_empty
 def selection_sort(arr:list, reverse=False) -> list or str:
-    if len(arr) == 0:
-        return 'cannot sort an empty list'
+    #if len(arr) == 0:
+        #return 'cannot sort an empty list'
 
     sorted_array = []
 
