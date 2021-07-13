@@ -16,16 +16,3 @@ def binary_search(list_: list, item: int or str) -> int:
             low = mid + 1
     return -1
 
-my_list = ['Ababio', 'Patrick']
-
-print(binary_search(my_list, 'Patrick'))
-
-
-
-
-
-
-
-
-
-

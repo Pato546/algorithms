@@ -13,8 +13,11 @@ class TestBinarySearch(unittest.TestCase):
         self.assertEqual(binary_search([1, 2, 3, 4, 5, 6], 3), 2)
         self.assertEqual(binary_search([1, 2, 3, 4, 5, 6], 1), 0)
 
-    def test_empty(self):
+    def test_not_found(self):
         self.assertEqual(binary_search([1, 2, 3, 4, 5, 6], 7), -1)
+
+    def test_empty(self):
+        self.assertEqual(binary_search([], 1), -1)
 
     def __str__(self):
         return 'TestBinarySearch'
