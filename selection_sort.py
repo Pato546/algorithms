@@ -7,7 +7,7 @@ def is_empty(func):
         
         for arg in args:
             if len(arg) == 0:
-                return 'cannot sort an empty list'
+                return [] 
         return func(*args, **kwargs)
     
     return wrapper
