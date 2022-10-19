@@ -9,7 +9,7 @@
 Long project description here.
 
 <!-- ![logo](header.png "logo") -->
-<img src="header.png" alt="logo" title="logo">
+<img src="assets/img/header.png" alt="logo" title="logo">
 
 > **Note**
 > The application has not been shipped yet so the installation command will not work
@@ -31,13 +31,6 @@ pip install pyalgorithms
 ## Usage example
 
 ## DEVELOPMENT SETUP
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
 
 ## RELEASE HISTORY
 
