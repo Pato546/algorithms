@@ -1,34 +1,23 @@
-#!/usr/bin/env python3
-from find_min_max import min_, max_
-
-def is_empty(func):
-    
-    def wrapper(*args, **kwargs):
-        
-        for arg in args:
-            if len(arg) == 0:
-                return [] 
-        return func(*args, **kwargs)
-    
-    return wrapper
+"""Selection Sort Algorithm"""
 
 
-@is_empty
-def selection_sort(arr:list, reverse=False) -> list or str:
-    #if len(arr) == 0:
-        #return 'cannot sort an empty list'
+def selection_sort(arr: list) -> list:
+    """Sorts a given list using selection sort algorithm
 
-    sorted_array = []
+    Examples:
+        >>> selection_sort([8,9, 6, 7, 4, 5, 1, 3, 2])
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    if not reverse:
-        for i in range(len(arr)):
-            sorted_array.append(arr.pop(min_(arr)))
+    Args:
+        arr (list): list to be sorted
 
-        return sorted_array
+    """
+    for i in range(len(arr)):
+        min_idx = i
+        for j in range(i, len(arr)):
+            if arr[j] < arr[min_idx]:
+                min_idx = j
 
-    else:
-        for i in range(len(arr)):
-            sorted_array.append(arr.pop(max_(arr)))
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-        return sorted_array
-
+    return arr
