@@ -1,10 +1,6 @@
-# PyAlgorithms
+# Algorithms
 
-> This project contains implementations of some the algoritms in python
-
-<!-- [![NPM Version][npm-image]][npm-url] -->
-<!-- [![Build Status][travis-image]][travis-url] -->
-<!-- [![Downloads Stats][npm-downloads]][npm-url] -->
+Python and C implementation of common algorithms
 
 Long project description here.
 
